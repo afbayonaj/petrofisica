@@ -1,0 +1,220 @@
+/*===================================================
+como buena practica formateamos los parametros 
+por defecto del navegador
+===================================================*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+/*===================================================
+Los siguintes son los estilos del header
+===================================================*/
+.header-nav
+{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 10px;
+    background-color: #13a43f;
+    font-family: century gothic;
+    font-size: 1.6rem;
+}
+
+.header-nav__item
+{
+    display: inline-flex;
+    height: 35px;
+    align-items: center;
+}
+
+.header-nav__item a
+{
+    color: white;
+    padding: 0px;
+    border-start-end-radius: 2px;
+    text-decoration: none;
+    /*border-radius: 8px;
+    background-color: red;*/
+}
+
+.header-nav__item a:hover /*Este es un pseudoclase*/
+{
+    color: blue;       
+}
+
+.header-nav__item a:active /*Este es un pseudoclase*/
+{
+    color: yellow;    
+}
+
+.header-nav__item a::after /*Este es un pseudoelemento*/
+{
+    content: " | ";
+}
+
+
+.header-nav__indice
+{
+    display: inline-flex;
+    height: 35px;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0px;
+    position: relative;
+    right: -80%;
+}
+
+
+.header-nav__indice a
+{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: century gothic;
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.header-nav__indice a::before
+{
+    content: " | ";
+}
+
+.header-nav__indice a:hover
+{
+    color: blue;
+}
+
+.header-nav__indice a:active
+{
+    color: yellow;
+}
+
+img
+{
+    /* margin: 0px;*/
+    padding-top: 0px; 
+    width: 25%;
+}
+/*===================================================
+Los siguintes son los estilos del main
+===================================================*/
+.lista
+{
+    text-align: center;
+    /*width: 20rem;
+    height: 60rem;*/
+}
+
+.listaimg
+{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 20rem;
+    height: 60rem;
+    border-style: solid;
+    border-color: #13a43f; 
+    text-align: center;
+    border-radius: 2rem;
+    background-color: lightgray;
+}
+/*
+.listaimg figure{
+width: 300px;
+height: 100px;
+margin: 15px 0;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+.listaimg figure:hover {
+width: 400px;
+height: 133px;
+margin-left: -50px;
+}
+
+.listaimg img
+{
+    width: 100px;
+    height: 300px;
+}
+*/
+.listaimg figure{
+    width: 20rem;
+    height: 60rem;
+    margin: 0px 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.listaimg figure:hover {
+    width: 30rem;
+    height: 63rem;
+    margin-left: -50px;
+}
+    
+
+.listaimg img{
+    width: 100px;
+    height: 300px;
+}
+
+
+.listap
+{
+    background-color: #13a43f;
+    text-align: center;
+    padding: 1.3rem;
+    width: 100%;
+    border-top-right-radius: 4rem; /*redondea la caja*/
+    border-bottom-left-radius: 4rem;
+    bottom: 12rem;
+    position: relative;
+    margin: 0 auto;
+    font-family: century gothic;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.listap:hover
+{
+    color: blue;
+}
+
+.listap:active
+{
+    color: yellow;
+}
+
+.main
+{
+    background-color: white;
+    /*background-color: rgb(227, 243, 231);*/
+    background-image: url("fondo.jpg");
+}
+/*===================================================
+Los siguintes son los estilos del footer
+===================================================*/
+.footer
+{
+    background-color: rgb(0, 66, 55);
+    font-family: century gothic;
+    color: white;
+    padding: 20px;
+    border-style: groove;
+    font-size: 1.6rem;
+}
